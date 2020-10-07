@@ -1,4 +1,4 @@
-
+#Creating a stack class with the pop and push methods
 class Stack:
     def __init__(self):
         self.internalArray = []
@@ -31,7 +31,7 @@ stack1 = Stack()
 print(stack1)
 
 print("pushing")
-#Adding pushing the numbers onto the stack
+#Adding (pushing) the numbers onto the stack
 stack1.push(1)
 print(stack1)
 stack1.push(4)
