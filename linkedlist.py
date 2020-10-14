@@ -20,27 +20,6 @@ class node:
   def __str__(self):
     return self.data.__str__()
 
-#Creating a class for the linked list
-class linkedList:
-  def __init__(self):
-    #Creating 2 attribtes
-    #first - firt node on the list
-    #last - last node on the list
-    self.first = None
-    self.last = None
-  
-  #Creating a function to add the values onto 
-  def add():
-
-  
-  def get(self,index):
-
-
-  def 
-
-  
-
-
 
 #Main program
 #Testing to see if it creates 
@@ -59,5 +38,4 @@ print(n1.prev)
 print(n1.next)
 print(n2.prev)
 print(n2.next)
-
 
