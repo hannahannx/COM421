@@ -12,7 +12,7 @@ class Stack:
       if len(self.internalArray) == 0:
         print("Stack is empty - cannot pop")
       else:
-        #store the currnt top of stackin the varibale 
+        #store the current top of stackin the varibale 
         a = self.internalArray[-1]
         # Code to remove an item from the top of the stack will go here
         #We are trying to delete the last member of the array
@@ -24,13 +24,14 @@ class Stack:
     def __str__(self):
         return self.internalArray.__str__()
 
-#Initalising the stack
+#Main Program
+#Initalising the stack----------------------------------------
 stack1 = Stack()
 
 #printing the empty stack
 print(stack1)
-
 print("pushing")
+
 #Adding (pushing) the numbers onto the stack
 stack1.push(1)
 print(stack1)
@@ -38,9 +39,9 @@ stack1.push(4)
 print(stack1)
 stack1.push(9)
 print(stack1)
+
 #Printing the stack
 print(stack1)
-
 print("popping")
 stack1.pop()
 print(stack1)
