@@ -14,7 +14,7 @@ class Stack:
         return self.internalArray.__str__()
 
 #Initalising the stack
-stack1 = Stack()
+stack1 = Stack() 
 
 #printing the empty stack
 print(stack1)
