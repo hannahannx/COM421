@@ -26,7 +26,7 @@ class linkedList:
     def __init__(self):
         #Creating 2 attribtes
         #first - first node on the list
-        #last - last node on the list
+        #last - last node on the list 
         self.first = None
         self.last = None
 
