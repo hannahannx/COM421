@@ -22,7 +22,7 @@ class Queue:
       self.back = 0
 
   #Removes the first item in the array at the front of the queue and returns it
-  def remove (self):
+  def remove (self,item):
     currentFrontItem = self.internalArray[self.front] #Returning the front item
     #The front of there queue is the next item's back
     self.front =  self.front + 1
@@ -40,9 +40,23 @@ class Queue:
 #Main program
 queue = Queue(6)
 
+#Checking if it will add items onto the array
+print("Adding Item")
 queue.add(2)
 print(queue)
+print("Adding Item")
 queue.add(4)
 print(queue)
+print("Adding Item")
 queue.add(9)
+print(queue)
+print("Adding Item")
+queue.add(102)
+print(queue)
+print("Adding Item")
+queue.add(28)
+print(queue)
+#Checking if it will remove items onto the array
+print("Removing Item")
+queue.remove(28)
 print(queue)
