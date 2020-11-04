@@ -1,4 +1,4 @@
-#SEPERATE CHAINING MEETHOD 
+ #SEPERATE CHAINING MEETHOD 
 #print("SEPERATE CHAINING METHOD ")
 #print()
 #Creating the list of keys 
@@ -15,23 +15,36 @@
 class HashTable:
   #Initalising the class
   def __init__(self,capacity = 127):
-    self.capacity = [None] * capacity
+    self.bucketArray = [None] * capacity
   
+  #Making a method to put the values inside of the hashtable
   def put(self,key,value):
     hashCode = self.getHashCode(key)
-    calculation = hashCode % 127
+    #Using this value and storing the value inside the list
+    bucketIndex = hashCode % 127
+    if self.bucketArray[bucketIndex] is None:
+      self.bucketArray[bucketIndex] = []
+        #adding the values as a tuple onto the list
+      self.bucketArray.append([key,value])
+    print(self.bucketArray)
 
-    
   def get(self,key):
     pass
 
+  #Calculating the ASCII code for the key
   def getHashCode(self,key):
+    hashCode = 0
     for value in key:
       convert = ord(value)
-      print("The value for {} is {}." .format(value,convert))
+      hashCode = hashCode + convert
+    return hashCode
+
 
   def run():
     pass
 
+#Main code
+#Testing for one value in the hashtable
+hashfunction = HashTable()
 
-print(HashTable("a"))
+hashfunction.put("cat","A type of animal")
