@@ -4,6 +4,7 @@ class Queue:
   def __init__(self,capacity = 5):
     #Initalising the Queue to make sure it has 5 spaces and the maximum capacity would be 5
     self.capacity = 5
+    #Where None represents that ther is nothing inside this position
     self.internalArray = [None] * self.capacity
     self.front = 0
     #This would be the next avaible space in the queue
