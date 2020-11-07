@@ -25,7 +25,7 @@ class HashTable:
     if self.bucketArray[bucketIndex] is None:
       self.bucketArray[bucketIndex] = []
         #adding the values as a tuple onto the list
-      self.bucketArray.append([key,value])
+      self.bucketArray.insert(bucketIndex,[key,value])
     print(self.bucketArray)
 
   def get(self,key):
