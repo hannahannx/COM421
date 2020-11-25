@@ -11,6 +11,7 @@ def binarySearch(listToCompare,numberToSearch):
     if listToCompare[mid] == numberToSearch:
       print("The value {} is at postion {}".format(numberToSearch,mid))
       break
+<<<<<<< HEAD
     else:
       if listToCompare[mid] > numberToSearch:
         end = mid+1
@@ -18,6 +19,14 @@ def binarySearch(listToCompare,numberToSearch):
         start = mid-1
       else:
         print("Your number is not in the list")
+=======
+    elif listToCompare[mid] > numberToSearch:
+      end = mid+1
+    elif listToCompare[mid] < numberToSearch:
+      start = mid-1
+    else:
+      print("Your number is not in the list")
+>>>>>>> c55cc374796d1d027b7fca4646dfe603672aeb5e
 
 
 def run():
